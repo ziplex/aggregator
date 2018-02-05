@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  aggregator:
+    container_name: aggregator
+    image: aggregator
+    build: .
+    ports:
+    - "8080:8080"
+    command: -h 0.0.0.0 -db-host postgres -db-name postgres -db-password test -db-create
+    depends_on:
+    - db
+
+  db:
+    container_name: postgres
+    image: postgres:9.5
+    environment:
+      POSTGRES_PASSWORD: test
+    ports:
+    - "5432:5432"
+    command: postgres -N 500

@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+{{ template "header" }}
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center  deep-orange-text">Нажми на кнопку</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Получишь  результат, и внутри на GO, что-то случится, ну жми скорее ну что же ты не рад ? </h5>
+        <h5 class="header col s12 light">Тебе ведь не зачем лениться !</h5>
+      </div>
+      <div class="row center">
+        <a href="news" id="play-button" class="btn-large waves-effect waves-light  deep-orange">КНОПКА</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Что произойдет если нажать кнопку? </h5>
+
+            <p class="light">Да ничего страшного не будет,  просто Вы мой друг получите порцию новостей из того источника что указали в настройках,  а так же эти 
+			новости попадут в базу.  Думаешь хитрый будешь давить кнопку и добавлять одно и то же? Нет дружок,  в Базу попадет только то чего там нет, волщебство от 
+			postgres. Хотя лучше под капот не смотреть там страшно все, докер какой-то, golang, да и кто его разберет что там еще....  </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">А почему новости такие короткие?</h5>
+
+            <p class="light">А потому что смысла нет хранить весь объем,  есть ссылки на оригинал,  а это всего лишь демо версия. Но можно сделать все что угодно, 
+			время бы еще на это найти.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center"> А что еще можно сделать?</h5>
+
+            <p class="light"> Ну, так скажем  можно в базе поискать то что уже собрали, но сначала будьте добры хотябы разок нажать на кнопку, для этого есть отдельная строка с поиском. Я же говорю, это всего лишь Демо, не стоит
+			искать тут каких-то страшных вещей типа  Angular или React. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+{{ template "footer" }}
+
+{{ end }}

@@ -1,0 +1,33 @@
+{{ define "news" }}
+
+{{ template "header" }}
+<!-- ==============news================== -->
+
+<div class="container">
+  <div class="row">
+{{range .}}
+  <div class="col s12 m12">
+    <div class="card horizontal">
+      <div class="card-image" style="padding:20px;">
+        <img src="{{ .Img }}">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h5>{{ .Title }}</h5>
+		  <p>{{ .Text }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ .Url }}">Перейти к новости</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
+	</div>
+</div>
+
+{{ template "footer" }}
+
+{{ end }}
+
+

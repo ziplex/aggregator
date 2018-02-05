@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Аггрегатор новостей</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="teal darken-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Аггрегатор -  звучит страшно</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Настройки</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Настройки</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center  deep-orange-text">Нажми на кнопку</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Получишь  результат, и внутри на GO, что-то случится, ну жми скорее ну что же ты не рад ? </h5>
+        <h5 class="header col s12 light">Тебе ведь не зачем лениться !</h5>
+      </div>
+      <div class="row center">
+        <a href="result" id="play-button" class="btn-large waves-effect waves-light  deep-orange">КНОПКА</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">W3C стандартизировал протокол децентрализованных социальных сетей ActivityPub </h5>
+
+            <p class="light">После трёх лет работы над спецификацией консорциум W3C объявил о придании протоколу ActivityPub статуса рекомендованного стандарта. ActivityPub определяет методы создания, обновления и удаления контента в децентрализованных социальных сетях, а также распространения уведомлений о появлении контента, выставления лайков и подписки на публикации участника. Протокол может применяться как для передачи контента от клиента к серверу, так и для организации взаимодействия между серверами децентрализованной социальной сети, в том числе для объединения разных сетей на основе отличающихся платформ. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Proxmox Mail Gateway 5 стал открытым продуктом</h5>
+
+            <p class="light">Компания Proxmox, известная разработкой дистрибутива Proxmox Virtual Environment для развертывания инфраструктур виртуальных серверов, объявила об открытии исходных текстов дистрибутива Proxmox Mail Gateway, развиваемого последние 12 лет в качестве проприетарного продукта. Proxmox Mail Gateway преподносится как готовое решение для быстрого создания системы контроля за почтовым трафиком и защиты внутреннего почтового сервера. Установочный ISO-образ доступен для свободной загрузки. Специфичные для дистрибутива компоненты открыты под лицензией AGPLv3. Для установки обновлений доступен как платный репозиторий Enterprise, так и два бесплатных репозитория, которые отличаются уровнем стабилизации обновлений.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center"> Выпуск Minibase, минимального статически собранного окружения Linux</h5>
+
+            <p class="light">По своим задачам окружение Minibase во многом напоминает Busybox и сопоставимо с ним по размеру. Ключевое отличие заключается в том, что Busybox оформлен в виде единого исполняемого файла, а Minibase позиционируется как набор статически собранных исполняемых файлов. При этом Minibase не ставит перед собой цель обеспечения совместимости с инструментарием POSIX или GNU и в большей степени нацелен на поставку специфичных для Linux сервисов (KMS VT, сетевые утилиты, шифрование диска). Minibase также не требует libc для сборки - за счёт прямого обращения к системным вызовам пакет самодостаточен, для его сборки достаточно компилятора и компоновщика. Для выполнения привилегированных операций в Minibase не используется suid-бит или capabilities, вместо этого осуществляется обращение к специальному привилегированному сервису через IPC. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+
+
+
+  <footer class="page-footer brown darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 center">
+          <h5 class="white-text">Зачем это здесь?</h5>
+          <p class="grey-text text-lighten-4"> Да просто дело было вечером,  а точнее ночью,  делать было нечего,  добрался до задания, вот что в итоге вышло</p>
+
+
+        </div>
+        
+        
+    </div>
+    
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
